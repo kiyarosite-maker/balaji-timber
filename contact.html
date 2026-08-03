@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <title>Contact Us | Balaji Timber (Construction)</title>
+    <meta name="description" content="Get in touch with Balaji Timber (Construction) for inquiries on timber supply, commercial & residential construction projects, and architectural planning.">
+    <meta name="keywords" content="Contact Balaji Timber, Construction Inquiry, Timber Supplier Contact, Building Contractor Phone Number">
+    <meta name="author" content="Balaji Timber (Construction)">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#0f172a">
+
+    <!-- Open Graph SEO -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Balaji Timber (Construction)">
+    <meta property="og:title" content="Contact Us - Balaji Timber (Construction)">
+    <meta property="og:description" content="Reach out to us for free project consultation and high-grade timber inquiries.">
+    <meta property="og:image" content="9image.jpg">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        :root {
+            --primary: #0f172a;
+            --accent: #ff6b00;
+            --accent-hover: #e05e00;
+            --bg-light: #f8fafc;
+            --text-main: #1e293b;
+            --text-muted: #64748b;
+            --white: #ffffff;
+            --whatsapp: #25d366;
+            --card-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.05);
+            --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background-color: var(--white);
+            color: var(--text-main);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* Floating WhatsApp Button */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 25px;
+            right: 25px;
+            background-color: var(--whatsapp);
+            color: var(--white);
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 32px;
+            box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4);
+            z-index: 10000;
+            text-decoration: none;
+            transition: var(--transition);
+        }
+
+        .whatsapp-float:hover {
+            transform: scale(1.1);
+            background-color: #20ba5a;
+            box-shadow: 0 8px 25px rgba(37, 211, 102, 0.6);
+            color: var(--white);
+        }
+
+        /* Header & Navigation */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 16px 8%;
+            background: rgba(15, 23, 42, 0.95);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            z-index: 1000;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .logo {
+            font-size: 20px;
+            font-weight: 800;
+            color: var(--white);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .logo span {
+            color: var(--accent);
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 32px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #cbd5e1;
+            font-weight: 500;
+            font-size: 15px;
+            transition: var(--transition);
+            position: relative;
+        }
+
+        nav ul li a.active, nav ul li a:hover {
+            color: var(--white);
+        }
+
+        nav ul li a::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -4px;
+            left: 0;
+            background-color: var(--accent);
+            transition: var(--transition);
+        }
+
+        nav ul li a.active::after, nav ul li a:hover::after {
+            width: 100%;
+        }
+
+        .cta-btn {
+            background: var(--accent);
+            color: var(--white);
+            padding: 12px 24px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 14px;
+            transition: var(--transition);
+            box-shadow: 0 4px 14px rgba(255, 107, 0, 0.3);
+            display: inline-block;
+            border: none;
+            cursor: pointer;
+        }
+
+        .cta-btn:hover {
+            background: var(--accent-hover);
+            transform: translateY(-2px);
+        }
+
+        .hamburger {
+            display: none;
+            font-size: 24px;
+            color: var(--white);
+            cursor: pointer;
+        }
+
+        /* Page Hero Header */
+        .page-hero {
+            padding: 140px 8% 70px;
+            background: linear-gradient(135deg, rgba(15, 23, 42, 0.9) 0%, rgba(15, 23, 42, 0.75) 100%), url('9image.jpg') no-repeat center center/cover;
+            color: var(--white);
+            text-align: center;
+        }
+
+        .page-hero h1 {
+            font-size: 46px;
+            font-weight: 800;
+            margin-bottom: 15px;
+            letter-spacing: -0.5px;
+        }
+
+        .page-hero h1 span {
+            color: var(--accent);
+        }
+
+        .page-hero p {
+            font-size: 18px;
+            color: #94a3b8;
+            max-width: 650px;
+            margin: 0 auto;
+        }
+
+        /* Contact Main Layout */
+        .contact-section {
+            padding: 90px 8%;
+            background: var(--bg-light);
+        }
+
+        .contact-container {
+            display: grid;
+            grid-template-columns: 1fr 1.2fr;
+            gap: 50px;
+        }
+
+        /* Contact Info Cards */
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+        }
+
+        .info-card {
+            background: var(--white);
+            padding: 25px;
+            border-radius: 12px;
+            border: 1px solid #e2e8f0;
+            display: flex;
+            align-items: flex-start;
+            gap: 20px;
+            box-shadow: var(--card-shadow);
+            transition: var(--transition);
+        }
+
+        .info-card:hover {
+            transform: translateY(-3px);
+            border-color: rgba(255, 107, 0, 0.3);
+        }
+
+        .info-card .icon-box {
+            width: 48px;
+            height: 48px;
+            background: rgba(255, 107, 0, 0.1);
+            color: var(--accent);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            flex-shrink: 0;
+        }
+
+        .info-card h3 {
+            font-size: 18px;
+            color: var(--primary);
+            margin-bottom: 5px;
+        }
+
+        .info-card p, .info-card a {
+            font-size: 14px;
+            color: var(--text-muted);
+            text-decoration: none;
+            line-height: 1.5;
+        }
+
+        .info-card a:hover {
+            color: var(--accent);
+        }
+
+        /* Form Styling */
+        .contact-form-box {
+            background: var(--white);
+            padding: 40px;
+            border-radius: 12px;
+            border: 1px solid #e2e8f0;
+            box-shadow: var(--card-shadow);
+        }
+
+        .contact-form-box h2 {
+            font-size: 26px;
+            font-weight: 800;
+            color: var(--primary);
+            margin-bottom: 8px;
+        }
+
+        .contact-form-box p {
+            color: var(--text-muted);
+            font-size: 14px;
+            margin-bottom: 30px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--primary);
+            margin-bottom: 8px;
+        }
+
+        .form-group input, 
+        .form-group select, 
+        .form-group textarea {
+            width: 100%;
+            padding: 12px 16px;
+            border: 1px solid #cbd5e1;
+            border-radius: 6px;
+            font-size: 14px;
+            color: var(--text-main);
+            outline: none;
+            transition: var(--transition);
+        }
+
+        .form-group input:focus, 
+        .form-group select:focus, 
+        .form-group textarea:focus {
+            border-color: var(--accent);
+            box-shadow: 0 0 0 3px rgba(255, 107, 0, 0.15);
+        }
+
+        .submit-btn {
+            width: 100%;
+            padding: 14px;
+            font-size: 15px;
+        }
+
+        /* Map Section */
+        .map-section {
+            width: 100%;
+            height: 400px;
+            background: #e2e8f0;
+        }
+
+        .map-section iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        /* Footer */
+        footer {
+            background: #090d16;
+            color: #64748b;
+            text-align: center;
+            padding: 25px;
+            font-size: 14px;
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 992px) {
+            .contact-container {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 768px) {
+            header {
+                padding: 15px 5%;
+            }
+
+            .hamburger {
+                display: block;
+            }
+
+            .header-btn {
+                display: none;
+            }
+
+            nav {
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                background: rgba(15, 23, 42, 0.98);
+                backdrop-filter: blur(15px);
+                border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+                clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+                transition: var(--transition);
+            }
+
+            nav.active {
+                clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+            }
+
+            nav ul {
+                flex-direction: column;
+                padding: 25px 0;
+                gap: 20px;
+                text-align: center;
+            }
+
+            .page-hero, .contact-section {
+                padding-left: 5%;
+                padding-right: 5%;
+            }
+
+            .page-hero h1 {
+                font-size: 32px;
+            }
+
+            .contact-form-box {
+                padding: 25px;
+            }
+
+            .whatsapp-float {
+                width: 50px;
+                height: 50px;
+                font-size: 26px;
+                bottom: 20px;
+                right: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/919876543210?text=Hello%20Balaji%20Timber,%20I%20want%20to%20get%20in%20touch." class="whatsapp-float" target="_blank" aria-label="Direct Chat on WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- Header Section -->
+    <header>
+        <a href="index.html" class="logo">
+            <i class="fa-solid fa-tree" style="color: var(--accent);"></i> Balaji <span>Timber</span>
+        </a>
+        
+        <nav id="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+
+        <a href="contact.html" class="cta-btn header-btn">Get a Quote</a>
+
+        <div class="hamburger" id="hamburger-btn" aria-label="Toggle Navigation">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </header>
+
+    <main>
+        <!-- Page Hero Banner -->
+        <section class="page-hero">
+            <h1>Get In <span>Touch With Us</span></h1>
+            <p>Have a construction project or timber requirement? Contact us today for direct consultations and price quotes.</p>
+        </section>
+
+        <!-- Main Contact Details & Form Section -->
+        <section class="contact-section">
+            <div class="contact-container">
+                
+                <!-- Contact Info Column -->
+                <div class="contact-info">
+                    <div class="info-card">
+                        <div class="icon-box"><i class="fa-solid fa-location-dot"></i></div>
+                        <div>
+                            <h3>Office & Yard Address</h3>
+                            <p>Balaji Timber Yard, Main Highway Road,<br>Industrial Area, City - 110001</p>
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="icon-box"><i class="fa-solid fa-phone"></i></div>
+                        <div>
+                            <h3>Call Us</h3>
+                            <p><a href="tel:+919876543210">+91 98765 43210</a></p>
+                            <p><a href="tel:+919876543211">+91 98765 43211</a></p>
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="icon-box"><i class="fa-solid fa-envelope"></i></div>
+                        <div>
+                            <h3>Email Us</h3>
+                            <p><a href="mailto:info@balajitimber.com">info@balajitimber.com</a></p>
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="icon-box"><i class="fa-solid fa-clock"></i></div>
+                        <div>
+                            <h3>Working Hours</h3>
+                            <p>Monday - Saturday: 9:00 AM - 7:30 PM</p>
+                            <p>Sunday: Closed</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form Column -->
+                <div class="contact-form-box">
+                    <h2>Send Us A Message</h2>
+                    <p>Fill out the form below and our engineering team will get back to you shortly.</p>
+
+                    <form id="whatsapp-form">
+                        <div class="form-group">
+                            <label for="fullname">Full Name *</label>
+                            <input type="text" id="fullname" placeholder="Your Full Name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Phone Number *</label>
+                            <input type="tel" id="phone" placeholder="Your Mobile Number" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="service">Select Service Required</label>
+                            <select id="service">
+                                <option value="General Inquiry">General Inquiry</option>
+                                <option value="Commercial Construction">Commercial Construction</option>
+                                <option value="Residential Building">Residential Building</option>
+                                <option value="Architectural & Timber Design">Architectural & Timber Design</option>
+                                <option value="Industrial Projects">Industrial Projects</option>
+                                <option value="Renovation & Remodeling">Renovation & Remodeling</option>
+                                <option value="Interior Woodwork">Interior Woodwork</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Your Message</label>
+                            <textarea id="message" rows="4" placeholder="Briefly describe your requirements..."></textarea>
+                        </div>
+
+                        <button type="submit" class="cta-btn submit-btn">Send Message via WhatsApp <i class="fa-brands fa-whatsapp" style="margin-left:6px;"></i></button>
+                    </form>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Google Map Section -->
+        <section class="map-section">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3501.986884617409!2d77.2090212!3d28.6139391!2m3!1f0!0!f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce2db961be393%3A0xf6c7d70e79c3b0!2sNew%20Delhi!5e0!3m2!1sen!2sin!4v1680000000000!5m2!1sen!2sin" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Balaji Timber (Construction). All Rights Reserved.</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+        // Mobile Navigation Toggle
+        const hamburgerBtn = document.getElementById('hamburger-btn');
+        const navbar = document.getElementById('navbar');
+        const hamburgerIcon = hamburgerBtn.querySelector('i');
+
+        hamburgerBtn.addEventListener('click', () => {
+            navbar.classList.toggle('active');
+            hamburgerIcon.classList.toggle('fa-bars');
+            hamburgerIcon.classList.toggle('fa-xmark');
+        });
+
+        // Contact Form to WhatsApp Script
+        document.getElementById('whatsapp-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const name = document.getElementById('fullname').value;
+            const phone = document.getElementById('phone').value;
+            const service = document.getElementById('service').value;
+            const message = document.getElementById('message').value;
+            
+            const whatsappNumber = "919876543210"; // Update with your actual WhatsApp Number
+            
+            const text = `*New Website Inquiry*%0A%0A*Name:* ${encodeURIComponent(name)}%0A*Phone:* ${encodeURIComponent(phone)}%0A*Service:* ${encodeURIComponent(service)}%0A*Message:* ${encodeURIComponent(message)}`;
+            
+            window.open(`https://wa.me/${whatsappNumber}?text=${text}`, '_blank');
+        });
+    </script>
+</body>
+</html>

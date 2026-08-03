@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <title>Balaji Timber (Construction) | Modern Engineering, Timber & Construction</title>
+    <meta name="description" content="Balaji Timber (Construction) provides premium residential, commercial, and industrial construction services along with architectural design and high-quality timber solutions.">
+    <meta name="keywords" content="Balaji Timber, Balaji Construction, Timber Works, Building Construction, Architectural Design, Luxury Homes, Commercial Building">
+    <meta name="author" content="Balaji Timber (Construction)">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#0f172a">
+
+    <!-- Open Graph / Social Media SEO -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Balaji Timber (Construction)">
+    <meta property="og:title" content="Balaji Timber (Construction) | Modern Engineering & Quality Architecture">
+    <meta property="og:description" content="Building your vision with strength, precision, and quality materials. Get a free consultation today!">
+    <meta property="og:image" content="1image.jpg">
+
+    <!-- Schema.org Structured Data for Local Business SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "GeneralContractor",
+      "name": "Balaji Timber (Construction)",
+      "image": "1image.jpg",
+      "description": "Commercial, residential, and industrial construction services with high-grade timber and engineering.",
+      "priceRange": "$$"
+    }
+    </script>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        :root {
+            --primary: #0f172a;
+            --accent: #ff6b00;
+            --accent-hover: #e05e00;
+            --bg-light: #f8fafc;
+            --text-main: #1e293b;
+            --text-muted: #64748b;
+            --white: #ffffff;
+            --whatsapp: #25d366;
+            --card-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.05);
+            --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background-color: var(--white);
+            color: var(--text-main);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* Floating WhatsApp Button */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 25px;
+            right: 25px;
+            background-color: var(--whatsapp);
+            color: var(--white);
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 32px;
+            box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4);
+            z-index: 10000;
+            text-decoration: none;
+            transition: var(--transition);
+        }
+
+        .whatsapp-float:hover {
+            transform: scale(1.1);
+            background-color: #20ba5a;
+            box-shadow: 0 8px 25px rgba(37, 211, 102, 0.6);
+            color: var(--white);
+        }
+
+        /* Header & Navigation */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 16px 8%;
+            background: rgba(15, 23, 42, 0.95);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            z-index: 1000;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .logo {
+            font-size: 20px;
+            font-weight: 800;
+            color: var(--white);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .logo span {
+            color: var(--accent);
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 32px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #cbd5e1;
+            font-weight: 500;
+            font-size: 15px;
+            transition: var(--transition);
+            position: relative;
+        }
+
+        nav ul li a::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -4px;
+            left: 0;
+            background-color: var(--accent);
+            transition: var(--transition);
+        }
+
+        nav ul li a:hover {
+            color: var(--white);
+        }
+
+        nav ul li a:hover::after {
+            width: 100%;
+        }
+
+        .cta-btn {
+            background: var(--accent);
+            color: var(--white);
+            padding: 12px 24px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 14px;
+            transition: var(--transition);
+            box-shadow: 0 4px 14px rgba(255, 107, 0, 0.3);
+            display: inline-block;
+        }
+
+        .cta-btn:hover {
+            background: var(--accent-hover);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(255, 107, 0, 0.4);
+        }
+
+        .hamburger {
+            display: none;
+            font-size: 24px;
+            color: var(--white);
+            cursor: pointer;
+        }
+
+        /* Hero Section */
+        .hero {
+            height: 100vh;
+            min-height: 600px;
+            background: linear-gradient(135deg, rgba(15, 23, 42, 0.88) 0%, rgba(15, 23, 42, 0.65) 100%), url('1image.jpg') no-repeat center center/cover;
+            display: flex;
+            align-items: center;
+            padding: 0 8%;
+            color: var(--white);
+        }
+
+        .hero-content {
+            max-width: 720px;
+            margin-top: 40px;
+        }
+
+        .hero-tag {
+            background: rgba(255, 107, 0, 0.15);
+            color: var(--accent);
+            border: 1px solid rgba(255, 107, 0, 0.3);
+            padding: 6px 16px;
+            border-radius: 50px;
+            font-size: 13px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+
+        .hero-content h1 {
+            font-size: 52px;
+            font-weight: 800;
+            line-height: 1.15;
+            margin-bottom: 20px;
+            letter-spacing: -1px;
+        }
+
+        .hero-content h1 span {
+            color: var(--accent);
+            background: linear-gradient(135deg, #ff6b00 0%, #ffa052 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .hero-content p {
+            font-size: 18px;
+            color: #94a3b8;
+            margin-bottom: 35px;
+        }
+
+        /* Section Global Typography */
+        .section-title {
+            font-size: 36px;
+            font-weight: 800;
+            margin-bottom: 12px;
+            color: var(--primary);
+            letter-spacing: -0.5px;
+        }
+
+        .section-subtitle {
+            color: var(--text-muted);
+            margin-bottom: 50px;
+            font-size: 16px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Services Section */
+        .services {
+            padding: 100px 8%;
+            background: var(--bg-light);
+            text-align: center;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .service-card {
+            background: var(--white);
+            border-radius: 12px;
+            padding: 28px;
+            box-shadow: var(--card-shadow);
+            transition: var(--transition);
+            text-align: left;
+            border: 1px solid #f1f5f9;
+        }
+
+        .service-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 35px -10px rgba(0, 0, 0, 0.08);
+            border-color: rgba(255, 107, 0, 0.2);
+        }
+
+        .service-img-wrapper {
+            width: 100%;
+            height: 200px;
+            border-radius: 8px;
+            overflow: hidden;
+            margin-bottom: 20px;
+        }
+
+        .service-card img.service-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: var(--transition);
+        }
+
+        .service-card:hover img.service-img {
+            transform: scale(1.05);
+        }
+
+        .icon-box {
+            width: 46px;
+            height: 46px;
+            background: rgba(255, 107, 0, 0.1);
+            color: var(--accent);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+            margin-bottom: 16px;
+        }
+
+        .service-card h3 {
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 10px;
+            color: var(--primary);
+        }
+
+        .service-card p {
+            color: var(--text-muted);
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+        /* About Section */
+        .about {
+            padding: 100px 8%;
+            display: flex;
+            align-items: center;
+            gap: 60px;
+            background: var(--white);
+        }
+
+        .about-img {
+            flex: 1;
+        }
+
+        .about-img img {
+            width: 100%;
+            border-radius: 16px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+        }
+
+        .about-text {
+            flex: 1;
+        }
+
+        .about-text h2 {
+            font-size: 38px;
+            font-weight: 800;
+            line-height: 1.25;
+            margin-bottom: 20px;
+            color: var(--primary);
+        }
+
+        .about-text p {
+            color: var(--text-muted);
+            line-height: 1.8;
+            margin-bottom: 30px;
+            font-size: 15px;
+        }
+
+        /* Contact Section */
+        .contact {
+            padding: 100px 8%;
+            background: var(--primary);
+            color: var(--white);
+            text-align: center;
+        }
+
+        .contact-container {
+            max-width: 650px;
+            margin: 0 auto;
+        }
+
+        .contact-img {
+            width: 100%;
+            height: 200px;
+            border-radius: 12px;
+            overflow: hidden;
+            margin-bottom: 30px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .contact-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .contact form {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .contact input, .contact textarea {
+            width: 100%;
+            padding: 16px 20px;
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            border-radius: 8px;
+            background: rgba(255, 255, 255, 0.05);
+            color: var(--white);
+            font-size: 15px;
+            outline: none;
+            transition: var(--transition);
+        }
+
+        .contact input:focus, .contact textarea:focus {
+            border-color: var(--accent);
+            background: rgba(255, 255, 255, 0.08);
+            box-shadow: 0 0 0 4px rgba(255, 107, 0, 0.15);
+        }
+
+        .contact textarea {
+            height: 130px;
+            resize: none;
+        }
+
+        .contact button {
+            background: var(--whatsapp);
+            color: var(--white);
+            padding: 16px;
+            border: none;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 16px;
+            cursor: pointer;
+            transition: var(--transition);
+            box-shadow: 0 4px 14px rgba(37, 211, 102, 0.3);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .contact button:hover {
+            background: #20ba5a;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4);
+        }
+
+        /* Footer */
+        footer {
+            background: #090d16;
+            color: #64748b;
+            text-align: center;
+            padding: 25px;
+            font-size: 14px;
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 992px) {
+            .about {
+                flex-direction: column;
+                gap: 40px;
+            }
+            .hero-content h1 {
+                font-size: 42px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            header {
+                padding: 15px 5%;
+            }
+
+            .hamburger {
+                display: block;
+            }
+
+            .header-btn {
+                display: none;
+            }
+
+            nav {
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                background: rgba(15, 23, 42, 0.98);
+                backdrop-filter: blur(15px);
+                border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+                clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+                transition: var(--transition);
+            }
+
+            nav.active {
+                clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+            }
+
+            nav ul {
+                flex-direction: column;
+                padding: 25px 0;
+                gap: 20px;
+                text-align: center;
+            }
+
+            .hero, .services, .about, .contact {
+                padding-left: 5%;
+                padding-right: 5%;
+            }
+
+            .services, .about, .contact {
+                padding-top: 60px;
+                padding-bottom: 60px;
+            }
+
+            .hero-content h1 {
+                font-size: 32px;
+            }
+
+            .hero-content p {
+                font-size: 15px;
+            }
+
+            .section-title {
+                font-size: 28px;
+            }
+
+            .whatsapp-float {
+                width: 50px;
+                height: 50px;
+                font-size: 26px;
+                bottom: 20px;
+                right: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/919876543210" class="whatsapp-float" target="_blank" aria-label="Direct Chat on WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- Header Section -->
+    <header>
+        <a href="index.html" class="logo">
+            <i class="fa-solid fa-tree" style="color: var(--accent);"></i> Balaji <span>Timber</span>
+        </a>
+        
+        <nav id="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <a href="#contact" class="cta-btn header-btn">Get a Quote</a>
+
+        <!-- Mobile Menu Hamburger -->
+        <div class="hamburger" id="hamburger-btn" aria-label="Toggle Mobile Navigation">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="hero-content">
+                <span class="hero-tag">Balaji Timber & Construction</span>
+                <h1>Building Your Vision With <span>Precision & Strength</span></h1>
+                <p>Leading provider of top-grade timber materials, commercial building, residential developments, and architectural engineering.</p>
+                <a href="#services" class="cta-btn">Explore Services <i class="fa-solid fa-arrow-right" style="margin-left: 6px;"></i></a>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section class="services" id="services">
+            <h2 class="section-title">Our Expert Services</h2>
+            <p class="section-subtitle">Providing high-quality timber and modern construction solutions for every requirement.</p>
+            
+            <div class="services-grid">
+                <article class="service-card">
+                    <div class="service-img-wrapper">
+                        <img src="3image.jpg" alt="Commercial Construction by Balaji Timber" class="service-img" loading="lazy">
+                    </div>
+                    <div class="icon-box"><i class="fa-solid fa-building"></i></div>
+                    <h3>Commercial Construction</h3>
+                    <p>High-rise offices, retail spaces, and corporate complexes engineered with modern safety standards.</p>
+                </article>
+                
+                <article class="service-card">
+                    <div class="service-img-wrapper">
+                        <img src="4image.jpg" alt="Residential Building Construction" class="service-img" loading="lazy">
+                    </div>
+                    <div class="icon-box"><i class="fa-solid fa-house-chimney"></i></div>
+                    <h3>Residential Building</h3>
+                    <p>Custom luxury homes, apartments, and modern villas built for long-lasting strength and durability.</p>
+                </article>
+
+                <article class="service-card">
+                    <div class="service-img-wrapper">
+                        <img src="5image.jpg" alt="Timber & Architectural Design" class="service-img" loading="lazy">
+                    </div>
+                    <div class="icon-box"><i class="fa-solid fa-compass-drafting"></i></div>
+                    <h3>Architectural & Timber Design</h3>
+                    <p>Custom timber woodwork, structural blueprints, and space planning designed by experts.</p>
+                </article>
+
+                <article class="service-card">
+                    <div class="service-img-wrapper">
+                        <img src="6image.jpg" alt="Industrial Construction Projects" class="service-img" loading="lazy">
+                    </div>
+                    <div class="icon-box"><i class="fa-solid fa-industry"></i></div>
+                    <h3>Industrial Projects</h3>
+                    <p>Factories, timber mills, warehouses, and heavy-duty industrial site constructions.</p>
+                </article>
+
+                <article class="service-card">
+                    <div class="service-img-wrapper">
+                        <img src="7image.jpg" alt="Property Renovation Services" class="service-img" loading="lazy">
+                    </div>
+                    <div class="icon-box"><i class="fa-solid fa-screwdriver-wrench"></i></div>
+                    <h3>Renovation & Remodeling</h3>
+                    <p>Upgrading existing properties with structural timber framework and modern aesthetics.</p>
+                </article>
+
+                <article class="service-card">
+                    <div class="service-img-wrapper">
+                        <img src="8image.jpg" alt="Interior Architecture and Woodwork" class="service-img" loading="lazy">
+                    </div>
+                    <div class="icon-box"><i class="fa-solid fa-layer-group"></i></div>
+                    <h3>Interior Woodwork</h3>
+                    <p>Premium wooden interiors, flooring, paneling, and custom architectural woodwork.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about" id="about">
+            <div class="about-img">
+                <img src="2image.jpg" alt="Balaji Timber Construction Team at Work" loading="lazy">
+            </div>
+            <div class="about-text">
+                <h2>25+ Years of Excellence in Timber & Construction</h2>
+                <p>At Balaji Timber (Construction), we transform blueprints into reality. With decades of hands-on experience, our engineers, architects, and master craftsmen ensure every project is completed on time with superior structural integrity and fine timber quality.</p>
+                <a href="#contact" class="cta-btn">Contact Us</a>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact" id="contact">
+            <div class="contact-container">
+                <h2 class="section-title" style="color: var(--white);">Start Your Project Today</h2>
+                <p class="section-subtitle" style="color: #94a3b8;">Fill the details below to send a direct message on WhatsApp for instant quote.</p>
+                
+                <div class="contact-img">
+                    <img src="9image.jpg" alt="Balaji Timber Construction Office" loading="lazy">
+                </div>
+
+                <!-- Direct WhatsApp Submission Form -->
+                <form id="whatsappForm">
+                    <div>
+                        <input type="text" id="userName" placeholder="Your Full Name" required>
+                    </div>
+                    <div>
+                        <input type="email" id="userEmail" placeholder="Your Email Address" required>
+                    </div>
+                    <div>
+                        <textarea id="userMsg" placeholder="Project Requirements (e.g. Timber supply, Home construction...)" required></textarea>
+                    </div>
+                    <button type="submit">
+                        Send Message on WhatsApp <i class="fa-brands fa-whatsapp"></i>
+                    </button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Balaji Timber (Construction). All Rights Reserved.</p>
+    </footer>
+
+    <!-- JavaScript Handling -->
+    <script>
+        // Mobile Navigation Menu Toggle
+        const hamburgerBtn = document.getElementById('hamburger-btn');
+        const navbar = document.getElementById('navbar');
+        const hamburgerIcon = hamburgerBtn.querySelector('i');
+
+        hamburgerBtn.addEventListener('click', () => {
+            navbar.classList.toggle('active');
+            hamburgerIcon.classList.toggle('fa-bars');
+            hamburgerIcon.classList.toggle('fa-xmark');
+        });
+
+        // Direct WhatsApp Form Submission Functionality
+        document.getElementById('whatsappForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            // Replace with your real WhatsApp phone number (with country code, no + or spaces)
+            const phoneNumber = "919876543210"; 
+
+            const name = document.getElementById('userName').value.trim();
+            const email = document.getElementById('userEmail').value.trim();
+            const message = document.getElementById('userMsg').value.trim();
+
+            // Constructing WhatsApp message string
+            const formattedMessage = `*New Inquiry - Balaji Timber (Construction)*%0A%0A` +
+                                     `*Name:* ${encodeURIComponent(name)}%0A` +
+                                     `*Email:* ${encodeURIComponent(email)}%0A` +
+                                     `*Requirements:* ${encodeURIComponent(message)}`;
+
+            // Creating WhatsApp Redirect URL
+            const whatsappURL = `https://wa.me/${phoneNumber}?text=${formattedMessage}`;
+
+            // Opening WhatsApp Chat Window
+            window.open(whatsappURL, '_blank');
+        });
+    </script>
+</body>
+</html>
