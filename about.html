@@ -5,24 +5,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <!-- SEO Meta Tags -->
-    <title>About Us | Balaji Timber (Construction)</title>
-    <meta name="description" content="Learn about Balaji Timber (Construction). With over 25+ years of experience, we provide premium timber materials, residential, commercial, and industrial construction services.">
-    <meta name="keywords" content="About Balaji Timber, Construction Company History, Best Timber Supplier, Building Contractors, Construction Engineers">
-    <meta name="author" content="Balaji Timber (Construction)">
+    <title>About Us | Balaji Shuttering & Scaffolding Store</title>
+    <meta name="description" content="Learn about Balaji Shuttering & Scaffolding Store. Over 25+ years of experience providing premium shuttering plates, cuplock systems, props, and construction equipment rental.">
+    <meta name="keywords" content="About Balaji Shuttering, Scaffolding Store History, Steel Shuttering Supplier, Scaffolding Rental, Construction Equipment">
+    <meta name="author" content="Balaji Shuttering & Scaffolding Store">
     <meta name="robots" content="index, follow">
     <meta name="theme-color" content="#0f172a">
+    <link rel="canonical" href="https://www.yourwebsite.com/about.html">
 
     <!-- Open Graph SEO -->
     <meta property="og:type" content="website">
-    <meta property="og:site_name" content="Balaji Timber (Construction)">
-    <meta property="og:title" content="About Us - Balaji Timber (Construction)">
-    <meta property="og:description" content="25+ years of excellence in timber supply, architectural engineering, and full-scale building construction.">
+    <meta property="og:site_name" content="Balaji Shuttering & Scaffolding Store">
+    <meta property="og:title" content="About Us - Balaji Shuttering & Scaffolding Store">
+    <meta property="og:description" content="25+ years of excellence in shuttering plates, cuplock scaffolding systems, and construction equipment rental.">
     <meta property="og:image" content="2image.jpg">
+    <meta property="og:url" content="https://www.yourwebsite.com/about.html">
+
+    <!-- Local Business Schema Markup -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HardwareStore",
+      "name": "Balaji Shuttering & Scaffolding Store",
+      "image": "2image.jpg",
+      "telephone": "+919813463239",
+      "email": "balajeetimber542@gmail.com",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "shuttering market plot no 12, old ambala road vill sanouli",
+        "addressLocality": "Zirakpur, Chandigarh",
+        "addressRegion": "Punjab",
+        "postalCode": "160104",
+        "addressCountry": "IN"
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday"
+        ],
+        "opens": "09:00",
+        "closes": "19:30"
+      }
+    }
+    </script>
 
     <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
     <!-- FontAwesome Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     
     <style>
         :root {
@@ -51,6 +89,7 @@
             color: var(--text-main);
             line-height: 1.6;
             overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
         }
 
         /* Floating WhatsApp Button */
@@ -157,7 +196,12 @@
             font-size: 14px;
             transition: var(--transition);
             box-shadow: 0 4px 14px rgba(255, 107, 0, 0.3);
-            display: inline-block;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            border: none;
+            cursor: pointer;
+            min-height: 48px; /* Mobile Friendly Touch Target */
         }
 
         .cta-btn:hover {
@@ -167,9 +211,10 @@
 
         .hamburger {
             display: none;
-            font-size: 24px;
+            font-size: 28px;
             color: var(--white);
             cursor: pointer;
+            padding: 5px;
         }
 
         /* Page Hero Header */
@@ -181,7 +226,7 @@
         }
 
         .page-hero h1 {
-            font-size: 46px;
+            font-size: clamp(32px, 5vw, 46px);
             font-weight: 800;
             margin-bottom: 15px;
             letter-spacing: -0.5px;
@@ -215,6 +260,7 @@
             width: 100%;
             border-radius: 12px;
             box-shadow: var(--card-shadow);
+            display: block;
         }
 
         .story-content {
@@ -222,7 +268,7 @@
         }
 
         .story-content h2 {
-            font-size: 34px;
+            font-size: clamp(26px, 3.5vw, 34px);
             font-weight: 800;
             color: var(--primary);
             margin-bottom: 20px;
@@ -272,7 +318,7 @@
         }
 
         .section-title {
-            font-size: 34px;
+            font-size: clamp(28px, 4vw, 34px);
             font-weight: 800;
             margin-bottom: 12px;
             color: var(--primary);
@@ -340,7 +386,7 @@
         }
 
         .cta-section h2 {
-            font-size: 32px;
+            font-size: clamp(26px, 4vw, 32px);
             font-weight: 800;
             margin-bottom: 15px;
         }
@@ -410,18 +456,10 @@
                 padding-right: 5%;
             }
 
-            .page-hero h1 {
-                font-size: 32px;
-            }
-
-            .story-content h2 {
-                font-size: 26px;
-            }
-
             .whatsapp-float {
-                width: 50px;
-                height: 50px;
-                font-size: 26px;
+                width: 55px;
+                height: 55px;
+                font-size: 28px;
                 bottom: 20px;
                 right: 20px;
             }
@@ -431,28 +469,27 @@
 <body>
 
     <!-- Floating WhatsApp Button -->
-    <a href="https://wa.me/919876543210?text=Hello%20Balaji%20Timber,%20I%20want%20to%20know%20more%20about%20your%20company." class="whatsapp-float" target="_blank" aria-label="Direct Chat on WhatsApp">
+    <a href="https://wa.me/917534807429?text=Hello%20Balaji%20Shuttering%20Store,%20I%20want%20to%20know%20more%20about%20your%20company." class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Direct Chat on WhatsApp">
         <i class="fa-brands fa-whatsapp"></i>
     </a>
 
     <!-- Header Section -->
     <header>
-        <a href="index.html" class="logo">
-            <i class="fa-solid fa-tree" style="color: var(--accent);"></i> Balaji <span>Timber</span>
+        <a href="index.html" class="logo" aria-label="Balaji Shuttering Home">
+            <i class="fa-solid fa-layer-group" style="color: var(--accent);"></i> Balaji <span>Shuttering</span>
         </a>
         
-        <nav id="navbar">
+        <nav id="navbar" aria-label="Main Navigation">
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="about.html" class="active">About</a></li>
+                <li><a href="about.html" class="active" aria-current="page">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
 
         <a href="contact.html" class="cta-btn header-btn">Get a Quote</a>
 
-        <div class="hamburger" id="hamburger-btn" aria-label="Toggle Navigation">
+        <div class="hamburger" id="hamburger-btn" aria-label="Toggle Navigation" role="button" tabindex="0">
             <i class="fa-solid fa-bars"></i>
         </div>
     </header>
@@ -460,19 +497,19 @@
     <main>
         <!-- Page Hero Banner -->
         <section class="page-hero">
-            <h1>About <span>Balaji Timber (Construction)</span></h1>
-            <p>Building strong foundations and crafting high-grade timber structures with trust, reliability, and precision for over two decades.</p>
+            <h1>About <span>Balaji Shuttering & Scaffolding Store</span></h1>
+            <p>Empowering concrete construction with heavy-duty shuttering plates, cuplock systems, telescopic props, and reliable site delivery for over two decades.</p>
         </section>
 
         <!-- Company Story Section -->
         <section class="story">
             <div class="story-img">
-                <img src="2image.jpg" alt="Balaji Timber Construction Work Site" loading="lazy">
+                <img src="2image.jpg" alt="Balaji Shuttering & Scaffolding Work Site" loading="lazy">
             </div>
             <div class="story-content">
-                <h2>25+ Years of Legacy in Quality Construction & Timber</h2>
-                <p>Founded with a commitment to excellence, **Balaji Timber (Construction)** has grown into one of the most trusted names in timber supply and building construction. We specialize in residential homes, commercial complexes, industrial sheds, and custom structural woodwork.</p>
-                <p>Our combined strength in civil engineering and high-grade timber sourcing allows us to deliver durable, aesthetically striking, and cost-effective construction solutions that stand the test of time.</p>
+                <h2>25+ Years of Trust in Shuttering & Scaffolding Rentals</h2>
+                <p>Founded with a commitment to site safety and structural excellence, <strong>Balaji Shuttering & Scaffolding Store</strong> has grown into one of the most trusted rental and material supply hubs. We specialize in steel shuttering plates, cuplock scaffolding systems, prop jacks, MS pipes, and column formwork.</p>
+                <p>Whether you are building residential homes, multi-storey commercial towers, or large infrastructure projects, our heavy-duty equipment ensures faster execution, maximum load safety, and cost-effective rental plans.</p>
                 <a href="contact.html" class="cta-btn">Work With Us</a>
             </div>
         </section>
@@ -482,54 +519,54 @@
             <div class="stats-grid">
                 <div class="stat-card">
                     <h3>25+</h3>
-                    <p>Years of Experience</p>
+                    <p>Years of Service</p>
                 </div>
                 <div class="stat-card">
                     <h3>500+</h3>
-                    <p>Projects Completed</p>
+                    <p>Sites Supplied</p>
                 </div>
                 <div class="stat-card">
                     <h3>100%</h3>
-                    <p>Quality Tested Timber</p>
+                    <p>Safety Tested Equipment</p>
                 </div>
                 <div class="stat-card">
                     <h3>300+</h3>
-                    <p>Satisfied Clients</p>
+                    <p>Happy Contractors & Builders</p>
                 </div>
             </div>
         </section>
 
         <!-- Vision, Mission & Core Values -->
         <section class="values">
-            <h2 class="section-title">Driven By Excellence & Trust</h2>
-            <p class="section-subtitle">Our core principles guide every project we undertake.</p>
+            <h2 class="section-title">Driven By Reliability & Quality</h2>
+            <p class="section-subtitle">Our core principles guide every single material delivery.</p>
 
             <div class="values-grid">
                 <div class="value-card">
                     <div class="icon-box"><i class="fa-solid fa-eye"></i></div>
                     <h3>Our Vision</h3>
-                    <p>To be the premier choice for modern construction and sustainable timber engineering, known for safety, durability, and innovation.</p>
+                    <p>To be the premier shuttering and scaffolding equipment provider, known for top-tier material strength, on-time logistics, and competitive rates.</p>
                 </div>
 
                 <div class="value-card">
                     <div class="icon-box"><i class="fa-solid fa-bullseye"></i></div>
                     <h3>Our Mission</h3>
-                    <p>To build exceptional living and commercial spaces using top-grade raw materials, precision craftsmanship, and transparent project management.</p>
+                    <p>To support contractors and civil builders with reliable formwork solutions, transparent pricing, and flexible rental options that speed up construction.</p>
                 </div>
 
                 <div class="value-card">
                     <div class="icon-box"><i class="fa-solid fa-shield-halved"></i></div>
-                    <h3>Quality Assurance</h3>
-                    <p>Every piece of timber and construction material undergoes rigorous quality checks to guarantee strength, termite-resistance, and longevity.</p>
+                    <h3>Quality & Safety</h3>
+                    <p>Every steel plate, prop jack, and cuplock pipe undergoes strict load and quality inspections before dispatch to ensure total site safety.</p>
                 </div>
             </div>
         </section>
 
         <!-- Call To Action Section -->
         <section class="cta-section">
-            <h2>Have Questions About Our Work or Timber Supply?</h2>
-            <p>Connect with our engineering and timber experts directly on WhatsApp.</p>
-            <a href="https://wa.me/919876543210?text=Hello%20Balaji%20Timber,%20I%20have%20an%20inquiry%20regarding%20a%20new%20project." target="_blank" class="cta-btn" style="background: var(--whatsapp); font-size: 16px; padding: 14px 30px;">
+            <h2>Need Material Quotation or Rental Terms?</h2>
+            <p>Connect directly with our shuttering material specialists on WhatsApp for quick stock checks and pricing.</p>
+            <a href="https://wa.me/917534807429?text=Hello%20Balaji%20Shuttering%20Store,%20I%20have%20an%20inquiry%20regarding%20shuttering%20materials." target="_blank" rel="noopener noreferrer" class="cta-btn" style="background: var(--whatsapp); font-size: 16px; padding: 14px 30px;">
                 Chat on WhatsApp <i class="fa-brands fa-whatsapp" style="margin-left: 8px;"></i>
             </a>
         </section>
@@ -537,7 +574,7 @@
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2026 Balaji Timber (Construction). All Rights Reserved.</p>
+        <p>&copy; 2026 Balaji Shuttering & Scaffolding Store. All Rights Reserved.</p>
     </footer>
 
     <!-- Mobile Navigation Script -->
